@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/login_style.css">
+
+</head>
+<body>
+<div id="login-form-wrap">
+    <h2>Register</h2>
+    <form id="login-form" method="post" action="http://127.0.0.1:5000/signup/new" enctype="multipart/form-data">
+        <p>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </p>
+        <p>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </p>
+        <p>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </p>
+        <p>
+            <input type="text" id="surname" name="surname" placeholder="Surname" required>
+        </p>
+        <p>
+            <input type="file" id="file" name="file" placeholder="Выберите аватар" accept="image/*">
+        </p>
+
+        <p>
+            <input type="submit" id="signup" value="signup">
+        </p>
+    </form>
+    <div id="register_account">
+    </div>
+</div>
+
+
+</body>
+</html>
